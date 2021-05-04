@@ -17,3 +17,5 @@ library(devtools)
 devtools::install_github("YZRCstatcodes2021/TestForMCAR", build_vignettes = TRUE)
 
 ```
+
+# Details for the MCAR.test Function
