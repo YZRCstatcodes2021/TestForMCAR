@@ -39,7 +39,8 @@ threshold.cat           The threshold number that define the continuous variable
 warning                 If warnings are given for chisq.test function, compute p-values with Monte Carlo simulation
 ``` 
 # Value
-Values were reported for the hypothesis testing results and unadjusted as well as adjusted p-values.
+Values were reported for the hypothesis testing results and unadjusted as well as adjusted p-values. Other multiple adjustment methods can be applied by the users
+using unadjusted p-values.
 ``` r
 var.type                "1" represents continuous data and "2" represents categorical data
 
