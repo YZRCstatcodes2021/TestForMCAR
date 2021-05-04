@@ -1,11 +1,11 @@
 Package: TestForMCAR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Test for MCAR
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Yu-Che Chung, Ruizhe Chen
+Maintainer: Yu-Che Chung, Ruizhe Chen <YZRC.github@outlook.com>
+Description: Testing whether an incomplete multivariate mixed-type data is missing
+             completely at random, the test can also apply to multivariate continuous and multivariate categorical data.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
