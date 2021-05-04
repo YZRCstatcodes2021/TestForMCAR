@@ -39,3 +39,43 @@ threshold.cat         The threshold number that define the continuous variable o
 warning               If warnings are given for chisq.test function, compute p-values with Monte Carlo simulation
 ``` 
 
+# Examples
+
+``` r
+test.data = iris
+test.data[sample(1:150,10),1] = NA
+test.data[sample(1:150,10),3] = NA
+test.data[sample(1:150,5),5] = NA
+MCAR.test(test.data)
+
+$var.type
+[1] 1 1 1 1 2
+$anova.BH
+[1] "Do not reject null"
+$anova.Storey_alpha
+[1] "Do not reject null"
+$anova.Storey_bootstrap
+[1] "Do not reject null"
+$AD.BH
+[1] "Do not reject null"
+$AD.Storey_alpha
+[1] "Do not reject null"
+$AD.Storey_bootstrap
+[1] "Do not reject null"
+$anova_unadjusted.pvalue
+[1] 0.3373038 0.8596099 0.2454772 0.3958304 0.8371628
+$AD_unadjusted.pvalue
+[1] 0.3935000 0.6980000 0.6162500 0.5213800 0.8371628
+$anova.BH.pvalue
+[1] 0.6597173 0.8596099 0.6597173 0.6597173 0.8596099
+$anova.Storey_alpha.pvalue
+[1] 0.6597173 0.8596099 0.6597173 0.6597173 0.8596099
+$anova.Storey_bootstrap.pvalue
+[1] 0.6597173 0.8596099 0.6597173 0.6597173 0.8596099
+$AD.BH.pvalue
+[1] 0.8371628 0.8371628 0.8371628 0.8371628 0.8371628
+$AD.Storey_alpha.pvalue
+[1] 0.8371628 0.8371628 0.8371628 0.8371628 0.8371628
+$AD.Storey_bootstrap.pvalue
+[1] 0.8371628 0.8371628 0.8371628 0.8371628 0.8371628
+``` 
