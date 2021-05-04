@@ -27,5 +27,15 @@ install.packages("kSamples", dependencies=TRUE)
 Usage:
 ``` r
 MCAR.test(data, alpha=0.05, threshold.cat=12, warning=T)
-
 ``` 
+Arguments:
+``` r
+data                  A dataframe of data matrix with missing data marked as NA
+
+alpha                 Type-I-error rate for the hypothesis testing
+
+threshold.cat         The threshold number that define the continuous variable or discrete variable
+
+warning               If warnings are given for chisq.test function, switch to compute p-values with Monte Carlo simulation
+``` 
+
