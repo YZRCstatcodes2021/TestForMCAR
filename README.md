@@ -16,6 +16,16 @@ library(devtools)
 # Install TestForMCAR with vignette from GitHub
 devtools::install_github("YZRCstatcodes2021/TestForMCAR", build_vignettes = TRUE)
 
+# Install complementary packages used in the function MCAR.test
+install.packages("R.utils", dependencies=TRUE)
+install.packages("kSamples", dependencies=TRUE)
+
 ```
 
 # MCAR.test Function
+
+Usage:
+``` r
+MCAR.test(data, alpha=0.05, threshold.cat=12, warning=T)
+
+``` 
