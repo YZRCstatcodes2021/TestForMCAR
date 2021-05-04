@@ -36,6 +36,6 @@ alpha                 Type-I-error rate for the hypothesis testing
 
 threshold.cat         The threshold number that define the continuous variable or discrete variable
 
-warning               If warnings are given for chisq.test function, switch to compute p-values with Monte Carlo simulation
+warning               If warnings are given for chisq.test function, compute p-values with Monte Carlo simulation
 ``` 
 
