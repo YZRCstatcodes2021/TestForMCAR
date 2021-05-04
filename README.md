@@ -30,15 +30,31 @@ MCAR.test(data, alpha=0.05, threshold.cat=12, warning=T)
 ``` 
 Arguments:
 ``` r
-data                  A dataframe of data matrix with missing data marked as NA
+data                    A dataframe of data matrix with missing data marked as NA
 
-alpha                 Type-I-error rate for the hypothesis testing
+alpha                   Type-I-error rate for the hypothesis testing
 
-threshold.cat         The threshold number that define the continuous variable or discrete variable
+threshold.cat           The threshold number that define the continuous variable or discrete variable
 
-warning               If warnings are given for chisq.test function, compute p-values with Monte Carlo simulation
+warning                 If warnings are given for chisq.test function, compute p-values with Monte Carlo simulation
 ``` 
+# Value
+Values were reported for the hypothesis testing results and unadjusted as well as adjusted p-values.
+``` r
+var.type                "1" represents continuous data and "2" represents categorical data
 
+anova.BH                Use anova-type test statistic with Benjamini-Hochberg procedure for multiple adjustments
+
+anova.Storey_alpha      Use anova-type test statistic with Storey(2004) for multiple adjustments where the tunning parameter is set to the type-I-error rate
+
+anova.Storey_bootstrap  Use anova-type test statistic with Storey(2004) for multiple adjustments where the tunning parameter is choosen using bootstrap
+
+AD.BH                   Use multi-sample Anderson-Darling test statistic with Benjamini-Hochberg procedure for multiple adjustments
+
+AD.Storey_alpha         Use multi-sample Anderson-Darling test statistic with Storey(2004) for multiple adjustments where the tunning parameter is set to the type-I-error rate
+
+AD.Storey_bootstrap     Use multi-sample Anderson-Darling test statistic with Storey(2004) for multiple adjustments where the tunning parameter is choosen using bootstrap
+``` 
 # Examples
 
 ``` r
