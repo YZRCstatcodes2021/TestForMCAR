@@ -44,17 +44,17 @@ using unadjusted p-values.
 ``` r
 var.type                "1" represents continuous data and "2" represents categorical data
 
-anova.BH                Use anova-type test statistic with Benjamini-Hochberg procedure for multiple adjustments
+anova.BH                ANOVA-type test statistic with Benjamini-Hochberg procedure for multiple adjustments
 
-anova.Storey_alpha      Use anova-type test statistic with Storey(2004) for multiple adjustments where the tunning parameter is set to the type-I-error rate
+anova.Storey_alpha      ANOVA-type test statistic with Storey(2004) for multiple adjustments where the tunning parameter is set to the type-I-error rate
 
-anova.Storey_bootstrap  Use anova-type test statistic with Storey(2004) for multiple adjustments where the tunning parameter is choosen using bootstrap
+anova.Storey_bootstrap  ANOVA-type test statistic with Storey(2004) for multiple adjustments where the tunning parameter is choosen using bootstrap
 
-AD.BH                   Use multi-sample Anderson-Darling test statistic with Benjamini-Hochberg procedure for multiple adjustments
+AD.BH                   Multi-sample Anderson-Darling test statistic with Benjamini-Hochberg procedure for multiple adjustments
 
-AD.Storey_alpha         Use multi-sample Anderson-Darling test statistic with Storey(2004) for multiple adjustments where the tunning parameter is set to the type-I-error rate
+AD.Storey_alpha         Multi-sample Anderson-Darling test statistic with Storey(2004) for multiple adjustments where the tunning parameter is set to the type-I-error rate
 
-AD.Storey_bootstrap     Use multi-sample Anderson-Darling test statistic with Storey(2004) for multiple adjustments where the tunning parameter is choosen using bootstrap
+AD.Storey_bootstrap     Multi-sample Anderson-Darling test statistic with Storey(2004) for multiple adjustments where the tunning parameter is choosen using bootstrap
 ``` 
 # Examples
 
