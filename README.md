@@ -34,7 +34,7 @@ data                    A dataframe of data matrix with missing data marked as N
 
 alpha                   Type-I-error rate for the hypothesis testing
 
-threshold.cat           The threshold number that define the continuous variable or discrete variable
+threshold.cat           The threshold number that defines the cutoff between continuous variable and discrete variable; Default is set at 12, which means a discrete variable with 12 or more levels is treated as a continuous variable
 
 warning                 If warnings are given for chisq.test function, compute p-values with Monte Carlo simulation
 ``` 
