@@ -1,8 +1,6 @@
 library(R.utils); library(kSamples)
 
-# source("/Storey_2004.R")
-source("C:/Users/Yu-Che/Box Sync/simulation codes from Yu-che/Mixed type simulation(OrdNor)/Storey_2004.R")
-# For Storey's method, the adjusted p-values should be larger or equal to the lambda value to be rejected.
+source("/Storey_2004.R")
 
 data=test.data
 MCAR.test = function(data, alpha=0.05, threshold.cat=12, var.type=NULL, warning=T){
