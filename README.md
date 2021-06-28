@@ -26,7 +26,7 @@ install.packages("kSamples", dependencies=TRUE)
 
 Usage:
 ``` r
-MCAR.test(data, alpha=0.05, threshold.cat=12, warning=T)
+MCAR.test(data, alpha=0.05, threshold.cat=12, var.type=NULL, warning=T)
 ``` 
 Arguments:
 ``` r
@@ -34,7 +34,9 @@ data                    A dataframe of data matrix with missing data marked as N
 
 alpha                   Type-I-error rate for the hypothesis testing
 
-threshold.cat           The threshold number that defines the cutoff between continuous variable and discrete variable; Default is set at 12, which means a discrete variable with 12 or more levels is treated as a continuous variable
+threshold.cat           The threshold number that defines the cutoff between continuous and categorical. Default is 12, which means a variable with 12 or more levels is treated as continuous, and a variable with less than 12 levels is treated as categorical. threshold.cat will not work if var.type is specified. 
+
+var.type                A vector of user-defined variable type. "1" denotes continuous and "2" denotes categorical. Default is NULL.
 
 warning                 If warnings are given for chisq.test function, compute p-values with Monte Carlo simulation
 ``` 
