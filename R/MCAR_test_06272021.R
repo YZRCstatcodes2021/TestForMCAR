@@ -2,7 +2,6 @@ library(R.utils); library(kSamples)
 
 source("/Storey_2004.R")
 
-data=test.data
 MCAR.test = function(data, alpha=0.05, threshold.cat=12, var.type=NULL, warning=T){
  
     if(!is.data.frame(data)){
@@ -96,22 +95,6 @@ MCAR.test = function(data, alpha=0.05, threshold.cat=12, var.type=NULL, warning=
                        AD.BH.pvalue= pvalue.AD.BH, AD.Storey_alpha.pvalue= pvalue.AD.Storey_alpha, AD.Storey_bootstrap.pvalue= pvalue.AD.Storey_bootstrap))  
 }
 
-set.seed(135)
-test.data = iris
-test.data[sample(1:150,10),1] = NA
-test.data[sample(1:150,10),3] = NA
-test.data[sample(1:150,5),5] = NA
-MCAR.test(test.data)
-MCAR.test(test.data,var.type=c(1,1,1,2,2))
-
-test.data2 = mtcars
-test.data2[sample(1:32,10),1] = NA
-test.data2[sample(1:32,10),3] = NA
-test.data2[sample(1:32,10),5] = NA
-test.data2[sample(1:32,10),8] = NA
-test.data2[sample(1:32,10),10] = NA
-
-MCAR.test(test.data2)
 
 ###############################################################################
 ###############################################################################
