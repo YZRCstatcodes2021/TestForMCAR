@@ -76,22 +76,22 @@ $var.type
 [1] 1 1 1 1 2
 
 $anova.BH
-[1] "Do not reject null"
+[1] "Do not reject the null"
 
 $anova.Storey_alpha
-[1] "Do not reject null"
+[1] "Do not reject the null"
 
 $anova.Storey_bootstrap
-[1] "Do not reject null"
+[1] "Do not reject the null"
 
 $AD.BH
-[1] "Do not reject null"
+[1] "Do not reject the null"
 
 $AD.Storey_alpha
-[1] "Do not reject null"
+[1] "Do not reject the null"
 
 $AD.Storey_bootstrap
-[1] "Do not reject null"
+[1] "Do not reject the null"
 
 $anova_unadjusted.pvalue
 [1] 0.5396284 0.4704782 0.8694131 0.6462750 0.3196803
