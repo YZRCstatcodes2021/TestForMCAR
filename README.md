@@ -64,40 +64,56 @@ AD.Storey_bootstrap     Multi-sample Anderson-Darling test statistic with Storey
 # Examples
 
 ``` r
+set.seed(321)
+
 test.data = iris
 test.data[sample(1:150,10),1] = NA
 test.data[sample(1:150,10),3] = NA
 test.data[sample(1:150,5),5] = NA
-MCAR.test(test.data)
 
+MCAR.test(test.data)
 $var.type
 [1] 1 1 1 1 2
+
 $anova.BH
 [1] "Do not reject null"
+
 $anova.Storey_alpha
 [1] "Do not reject null"
+
 $anova.Storey_bootstrap
 [1] "Do not reject null"
+
 $AD.BH
 [1] "Do not reject null"
+
 $AD.Storey_alpha
 [1] "Do not reject null"
+
 $AD.Storey_bootstrap
 [1] "Do not reject null"
+
 $anova_unadjusted.pvalue
-[1] 0.3373038 0.8596099 0.2454772 0.3958304 0.8371628
+[1] 0.5396284 0.4704782 0.8694131 0.6462750 0.3196803
+
 $AD_unadjusted.pvalue
-[1] 0.3935000 0.6980000 0.6162500 0.5213800 0.8371628
+[1] 0.5832500 0.4273800 0.9572500 0.3586200 0.3196803
+
 $anova.BH.pvalue
-[1] 0.6597173 0.8596099 0.6597173 0.6597173 0.8596099
+[1] 0.8078438 0.8078438 0.8694131 0.8078438 0.8078438
+
 $anova.Storey_alpha.pvalue
-[1] 0.6597173 0.8596099 0.6597173 0.6597173 0.8596099
+[1] 0.8078438 0.8078438 0.8694131 0.8078438 0.8078438
+
 $anova.Storey_bootstrap.pvalue
-[1] 0.6597173 0.8596099 0.6597173 0.6597173 0.8596099
+[1] 0.8078438 0.8078438 0.8694131 0.8078438 0.8078438
+
 $AD.BH.pvalue
-[1] 0.8371628 0.8371628 0.8371628 0.8371628 0.8371628
+[1] 0.7290625 0.7123000 0.9572500 0.7123000 0.7123000
+
 $AD.Storey_alpha.pvalue
-[1] 0.8371628 0.8371628 0.8371628 0.8371628 0.8371628
+[1] 0.7290625 0.7123000 0.9572500 0.7123000 0.7123000
+
 $AD.Storey_bootstrap.pvalue
-[1] 0.8371628 0.8371628 0.8371628 0.8371628 0.8371628
+[1] 0.7290625 0.7123000 0.9572500 0.7123000 0.7123000
 ``` 
