@@ -81,12 +81,12 @@ MCAR.test = function(data, alpha=0.05, threshold.cat=12, var.type=NULL, warning=
     pvalue.AD.Storey_bootstrap = AD.Storey_bootstrap$adaptive.pvalues
 
     if(!is.null(var.type)){var.type.output=var.type}
-    result.anova.BH = ifelse( any( pvalue.anova.BH < alpha), "Reject Null","Do not reject null")
-    result.anova.Storey_alpha = ifelse( sum(anova.Storey_alpha$pvalues.reject) != 0 , "Reject null", "Do not reject null")
-    result.anova.Storey_bootstrap = ifelse( sum(anova.Storey_bootstrap$pvalues.reject) != 0 , "Reject null", "Do not reject null")
-    result.AD.BH = ifelse( any( pvalue.AD.BH < alpha), "Reject Null","Do not reject null")
-    result.AD.Storey_alpha = ifelse( sum(AD.Storey_alpha$pvalues.reject) != 0 , "Reject null", "Do not reject null")
-    result.AD.Storey_bootstrap = ifelse( sum(AD.Storey_bootstrap$pvalues.reject) != 0 , "Reject null", "Do not reject null")
+    result.anova.BH = ifelse( any( pvalue.anova.BH < alpha), "Reject the null","Do not reject the null")
+    result.anova.Storey_alpha = ifelse( sum(anova.Storey_alpha$pvalues.reject) != 0 , "Reject the null", "Do not reject the null")
+    result.anova.Storey_bootstrap = ifelse( sum(anova.Storey_bootstrap$pvalues.reject) != 0 , "Reject the null", "Do not reject the null")
+    result.AD.BH = ifelse( any( pvalue.AD.BH < alpha), "Reject the null","Do not reject the null")
+    result.AD.Storey_alpha = ifelse( sum(AD.Storey_alpha$pvalues.reject) != 0 , "Reject the null", "Do not reject the null")
+    result.AD.Storey_bootstrap = ifelse( sum(AD.Storey_bootstrap$pvalues.reject) != 0 , "Reject the null", "Do not reject the null")
     return(result=list(var.type=var.type.output, anova.BH=result.anova.BH, anova.Storey_alpha=result.anova.Storey_alpha, anova.Storey_bootstrap=result.anova.Storey_bootstrap, 
                        AD.BH=result.AD.BH, AD.Storey_alpha = result.AD.Storey_alpha, AD.Storey_bootstrap = result.AD.Storey_bootstrap,
                        anova_unadjusted.pvalue=pvalue.list, AD_unadjusted.pvalue=pvalue.list2,
