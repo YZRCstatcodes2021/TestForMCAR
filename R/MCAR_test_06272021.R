@@ -1,6 +1,5 @@
 library(R.utils); library(kSamples)
 
-source("/Storey_2004.R")
 
 MCAR.test = function(data, alpha=0.05, threshold.cat=12, var.type=NULL, warning=T){
  
